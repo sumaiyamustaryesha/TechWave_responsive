@@ -1,0 +1,89 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background: #1a0b28;
+color:#fff;
+}
+
+/* common */
+
+.container{
+max-width:1320px;
+width:100%;
+margin:0 auto;
+}
+
+.site_title{
+font-size:36px;
+padding-top:120px;
+padding-bottom:40px;
+text-align:center;
+}
+
+.common_btn{
+background: linear-gradient(90deg,#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+color:white;
+
+display:flex;
+align-items:center;
+gap:6px;
+font-size: largerg;
+}
+
+.common_btn:hover{
+opacity:.9;
+}
+
+/* header */
+
+.header{
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height: 92px;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+
+
+.logo span{
+background: linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+display:inline-block;
+}
+.nav_items ul{
+display:flex;
+gap:32px;
+font-size: larger;
+}
+
+.nav_items li{
+list-style:none;
+}
+
+.nav_items a{
+text-decoration:none;
+color:#fff;
+}
+
+.menu_bar{
+display:none;
+}
