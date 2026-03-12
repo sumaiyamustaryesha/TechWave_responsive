@@ -29,14 +29,14 @@ text-align:center;
 background: linear-gradient(90deg,#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
 border:none;
 padding:10px 18px;
-border-radius:6px;
+border-radius:50px;
 cursor:pointer;
 color:white;
 
 display:flex;
 align-items:center;
 gap:6px;
-font-size: largerg;
+font-size: larger;
 }
 
 .common_btn:hover{
@@ -86,4 +86,72 @@ color:#fff;
 
 .menu_bar{
 display:none;
+}
+
+/* hero */
+
+.hero{
+padding-top:80px;
+padding-bottom:80px;
+text-align:center;
+background:url("../assets/hero-bg.png");
+background-size:cover;
+background-position:center;
+}
+
+.podcast_circle{
+width:220px;
+height:220px;
+background:url("../assets/hero-circle.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:relative;
+margin:0 auto;
+}
+
+.podcast_circle img{
+width:80px;
+}
+
+
+.new_badge{
+position:absolute;
+top:10px;
+right:10px;
+background:#00ff88;
+color:#000;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+.hero_content h1{
+font-size:56px;
+margin-top:20px;
+}
+
+.hero_content p{
+padding:20px 0;
+max-width:500px;
+margin:auto;
+}
+
+.hero_btns{
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.subscribe_btn{
+    color:#00ff88;
+font-size: larger;
+background-color: #1a0b28;
+border-color: #00ff88;
+border-radius: 50px;
 }
