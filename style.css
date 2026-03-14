@@ -276,3 +276,28 @@ grid-template-areas:
 }
 
 }
+
+/* episodes */
+
+.episode_container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.episode_card{
+background:#250D44;
+padding:20px;
+border-radius:10px;
+}
+
+.episode_card iframe{
+width:100%;
+height:200px;
+border:none;
+border-radius:10px;
+}
+
+.duration{
+color:#00ff9c;
+}
