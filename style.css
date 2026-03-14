@@ -155,3 +155,92 @@ background-color: #1a0b28;
 border-color: #00ff88;
 border-radius: 50px;
 }
+
+
+/* features */
+/* section background */
+
+.features{
+background:#230E3D;
+padding:100px 0;
+}
+
+
+/* center container like figma */
+
+.container{
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
+margin-bottom: 120px;
+}
+
+
+/* section title */
+
+.site_title{
+text-align:center;
+color:white;
+font-size:32px;
+margin-bottom:60px;
+}
+
+
+/* grid layout */
+
+.feature_cards{
+display:grid;
+grid-template-columns:repeat(12,1fr);
+grid-template-areas:
+
+"card1 card1 card1 card1 card1 card1 card2 card2 card2 card2 card2 card2"
+"card1 card1 card1 card1 card1 card1 card3 card3 card3 card3 card3 card3"
+"card4 card4 card4 card4 card4 card4 card4 card4 card5 card5 card5 card5";
+
+gap:30px;
+}
+
+
+/* card base style */
+
+.feature_card{
+/*background:#2b1246;*/
+background: #351165;
+padding:30px;
+border-radius:20px;
+color:white;
+}
+
+
+.feature_card img{
+width:40px;
+margin-bottom:15px;
+}
+
+
+/* assign grid areas */
+
+.card1{ grid-area:card1; }
+
+.card2{ grid-area:card2; }
+
+.card3{ grid-area:card3; }
+
+.card4{ grid-area:card4; }
+
+.card5{ grid-area:card5; }
+
+@media screen and (max-width:576px){
+
+.feature_cards{
+grid-template-columns:1fr;
+grid-template-areas:
+
+"card1"
+"card2"
+"card3"
+"card4"
+"card5";
+}
+
+}
