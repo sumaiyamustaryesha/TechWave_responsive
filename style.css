@@ -374,8 +374,6 @@ body {
     display: flex;
     gap: 40px;
     align-items: center;
-   /* flex-direction: column;
-    text-align: center;*/
 }
 
 .host_img img {
@@ -441,13 +439,14 @@ body {
 
 @media screen and (max-width:576px) {
 
-    /* .host_container {
+    .host_container {
         flex-direction: column;
         text-align: center;
     }
+
     .social_icons {
         justify-content: center;
-    }*/
+    }
 
     .nav_items,
     .nav_right {
@@ -474,3 +473,5 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/*end, text for testing final commit */
