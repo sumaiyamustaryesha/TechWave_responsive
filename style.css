@@ -59,8 +59,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-     min-height: 100px;
-    
+    min-height: 100px;
+
 }
 
 .logo {
@@ -108,16 +108,16 @@ body {
 
     min-height: 600px;
     width: 100%;
-    display: flex;          
-    align-items: center;     
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .hero .container {
 
-     width: 100%;
-    max-width: 1320px;        
-    margin: 0 auto;           
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -169,6 +169,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .subscribe_btn {
@@ -181,21 +182,22 @@ body {
 }
 
 
-.subscribe-btn:hover{
-transform:scale(1.1);
+.subscribe_btn:hover {
+    transform: scale(1.1);
 }
 
-.hamburger{
-display:none;
-font-size:22px;
+.hamburger {
+    display: none;
+    font-size: 22px;
 }
 
 
 /* about */
 
-.site_title{
+.site_title {
     padding-top: 50px;
 }
+
 .about_text {
     text-align: center;
     max-width: 700px;
@@ -372,12 +374,13 @@ font-size:22px;
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .host_img img {
     width: 200px;
     height: 200px;
-    ;
     border-radius: 50%;
 }
 
@@ -433,4 +436,43 @@ font-size:22px;
 
 .platforms img {
     width: 21px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+
+     .host_container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social_icons {
+        justify-content: center;
+    }
+
+    .nav_items,
+    .nav_right {
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+
+    .hero_content h1 {
+        font-size: 32px;
+    }
+
+    .stats_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .episode_container {
+        grid-template-columns: 1fr;
+    }
 }
